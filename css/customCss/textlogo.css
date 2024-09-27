@@ -1,0 +1,47 @@
+.mybrand {
+  display: flex;
+  align-items: center;
+}
+
+
+.sofadi-one-regular {
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.company-name {
+  font-family: "Sofadi One", system-ui;
+  display: inline-block;
+  text-align: center; /* Centers the text */
+  font-weight: 600;   /* Make it bold for emphasis */
+
+  margin-left: 12px; /* Space between the logo and company name */
+  font-size: 1.5rem; /* Slightly larger font size for emphasis */
+  color: #A0153E; /* Dark color for readability and contrast */
+  text-transform: capitalize; /* Ensure the name is styled correctly */
+  letter-spacing: 0.5px; /* Slight spacing between letters for a clean look */
+}
+.subtext {
+  color: #b43f14;
+  display: block;     /* Forces "Trust" onto the next line */
+  font-size: 1.0rem;  /* Adjust font size of "Trust" */
+  margin-top: 0.5px;    /* Space between the two lines */
+}
+
+.company-name:hover {
+  color: #14cb85; /* Optional: change the color on hover (Bootstrap's primary color) */
+}
+
+.subtext:hover {
+  color: #FF204E; /* Optional: change the color on hover (Bootstrap's primary color) */
+}
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 0.75rem; /* Slightly smaller font for mobile */
+    margin-left: 8px;
+  }
+  .subtext {
+    font-size: 0.75rem; /* Slightly smaller font for mobile */
+    margin-left: 8px;
+  }
+}

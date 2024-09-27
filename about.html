@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sai Rural Development Trust</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+        <!-- textlogoCss -->
+        <link rel="stylesheet" href="css/customCss/textlogo.css">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif; /* added font family */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 24px; /* increased font size */
+  color: #333; /* added font color */
+}
+
+.card-text {
+  margin-bottom: 20px;
+  font-size: 20px; /* increased font size */
+  color: #666; /* added font color */
+}
+
+.list-group {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px; /* increased font size */
+  color: #484848; /* added font color */
+  font-size: larger;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.home-list-pop {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 15px 0px;
+  margin: 0px 100px 0px 100px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f1f2f3;
+  font-family: 'Open Sans', sans-serif; /* added font family */
+  transition: transform 0.3s;
+}
+
+.home-list-pop:hover{
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 15px 0px;
+  margin: 0px 100px 0px 100px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f1f2f3;
+  font-family: 'Open Sans', sans-serif; /* added font family */
+  transform: scale(1.1);
+}
+
+.list-spac {
+  margin: 15px;
+  padding: 15px 0px;
+  margin-bottom: 15px !important;
+  font-size: 16px; /* increased font size */
+  color: #666; /* added font color */
+}  /* Basic Styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 1rem 0;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+} */
+
+.container {
+  /* max-width: 1200px; */
+  /* margin: 2rem auto;
+  padding: 0 2rem; */
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* About Us Section */
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-text {
+  width: 50%;
+}
+
+.about-us-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Vision, Mission, Values Sections */
+.mission-section,
+.vision-section,
+.values-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section h2,
+.vision-section h2,
+.values-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.values-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Goals Section */
+.goals-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goals-text {
+  width: 50%;
+}
+
+.goals-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goals-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Milestones & Awards Section */
+.milestones-awards-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.milestone-card {
+  width: 30%;
+  text-align: center;
+}
+
+.milestone-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-member {
+  width: 20%;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Advisors Section */
+.advisors-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.advisor-card {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.advisor-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Legal Status Section */
+.legal-status-section {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.legal-status-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.legal-status-section th,
+.legal-status-section td {
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Reports Section */
+.reports-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reports-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.reports-section th,
+.reports-section td {
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Footer Section */
+footer {
+  
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+}
+
+footer .social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+footer .social-links li {
+  margin-right: 1rem;
+}
+
+footer .social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+    </style>
+  </head>
+  <body>
+    
+    
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="mybrand" href="index.html">
+          <img src="./images/logo/Untitled_design__6__1_-removebg-preview.png" alt="logo" style="
+          width: 18%; ">
+               <!-- <span class="company-name"><span style="color: #FB773C;">Sai</span> <span style="color: #5C469C;">Rural</span> <span style="color: #F806CC;">Development</span>  <span class="subtext">Trust</span></span> -->
+             
+               <span style="opacity: 25 ; border-radius: 40%;">
+                <img src="./images/completed project/sainameLogo.png" alt="logo" style="
+                      width: 100%; ">
+               </span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+            <!-- <li class="nav-item"><a href="causes.html" class="nav-link">Focus_Areas</a></li>  -->
+            <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+            <li class="nav-item"><a href="completedProject.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+  </br>
+
+  <div class="col-md-12 d-flex justify-content-center">
+
+    <div class="hero-wrap" style="background-image: url('images/bg-7.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">About Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <br>
+  <h1 class="card-title" style="text-align: center;font-size: xx-large;">About Us</h1>
+  <div class="card about-us home-list-pop">
+    <div class="card-body">
+
+      <p class="card-text">Sai Rural Development Trust (SRDT), established under the Mumbai Public Trust Act, 1950, has been working tirelessly in the sector for several years. We dedicate our efforts to improving the lives of Farmers, Farm Workers, Communities and Women SHG’s through various development projects.</p>
+      <p class="card-text">We bring a wealth of experience in Project Planning & Execution across various sectors, Capacity Building, Training, and comprehensive Baseline Study/Needs Assessment. Our team is dedicated to ensuring the success of our initiatives and making a tangible difference in the lives of those we serve.</p>
+    </div>
+  </div>
+  <br>
+  <h2 class="card-title" style="text-align: center;font-size: xx-large;"><i class="fa fa-eye" style="font-size:36px"></i> Our Vision</h2>
+  <div class="card our-vision home-list-pop">
+    <div class="card-body">
+
+      <p class="card-text">To provide resources and opportunities to underprivileged individuals, groups, and communities, empowering them to live with dignity and become active, contributing members of our society.</p>
+    </div>
+  </div>
+  <br>
+  <h2 class="card-title"style="text-align: center;font-size: xx-large;"><i class="fa fa-bullseye"></i> Our Mission</h2>
+  <div class="card our-mission home-list-pop">
+    
+    <div class="card-body">
+      
+      <p class="card-text">We strive to be the foundation for social change and inclusion, fostering the social development and integration of underprivileged individuals, groups, and communities.</p>
+    </div>
+  </div>
+  <br>
+  <h2 class="card-title" style="text-align: center;font-size: xx-large;"><i class="fas fa-value-absolute"></i> Our Core Values</h2>
+  <div class="card core-values home-list-pop">
+    <div class="card-body">
+
+      <ul class="list-group list-group-flush list-spac">
+        <li class="list-group-item">Responsibility</li>
+        <li class="list-group-item">Accountability</li>
+        <li class="list-group-item">Transparency</li>
+        <li class="list-group-item">Innovation</li>
+        <li class="list-group-item">Equality</li>
+        <li class="list-group-item">Participation</li>
+        <li class="list-group-item">Creativity</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <h2 class="card-title" style="text-align: center;font-size: xx-large;">Message from the Chairman</h2>
+  <div class="card message-chairman home-list-pop">
+    <div class="card-body">
+
+      <p class="card-text">I strongly believe that it’s our duty and responsibility to give back to the society in which we live. Our team's unwavering dedication and support have enabled us to make a positive impact on countless lives. Together, we are building a brighter future for all.</p>
+      <p class="card-text" style="font-weight: bold;">- Mr. Ram Santram Mise, Chairman, Sai Rural Development Trust</p>
+    </div>
+  </div>
+<br><br><br>
+
+<h2 class="card-title" style="text-align: center;font-size: xx-large;">Our Reach</h2>
+<div class="card message-chairman home-list-pop">
+  <div class="card-body">
+    <img src="./images/map/ourreachmap.jpg" class="d-block w-100" alt="...">
+  </div>
+</div>
+
+
+
+<br><br><br>
+
+
+
+
+
+
+<footer class="ftco-footer ftco-section img">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row mb-5">
+
+      
+      <div class="col-md-5">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">About Us</h2>
+          <p>Sai Rural Development Trust (SRDT), established under the Mumbai Public Trust Act, 1950, has been working tirelessly in the sector for several years. We dedicate our efforts to improving the lives of Farmers, Farm Workers, Communities and Women SHG’s through various development projects.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+            <li class="ftco-animate"><a href="https://www.linkedin.com/company/sai-rural-development-trust/"><span class="icon-linkedin"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100087210614157&mibextid=LQQJ4d"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instagram.com/sai_rural_development_trust_?igsh=MWxpM3VvNHpzc3p0Nw== "><span class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- <div class="col-md-4">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Recent Blog</h2>
+          <div class="block-21 mb-4 d-flex">
+            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-21 mb-4 d-flex">
+            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+      <div class="col-md-2">
+         <div class="ftco-footer-widget mb-4 ml-md-4">
+          <h2 class="ftco-heading-2">Site Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" class="py-2 d-block">Home</a></li>
+            <li><a href="./about.html" class="py-2 d-block">About</a></li>
+            <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
+            <!-- <li><a href="causes.html" class="py-2 d-block">Causes</a></li> -->
+            <li><a href="./completedProject.html" class="py-2 d-block">Project</a></li>
+
+            <li><a href="./gallery.html" class="py-2 d-block">Gallery</a></li>
+            <li><a href="./blog.html" class="py-2 d-block">Blog</a></li>
+            <li><a href="./contact.html" class="py-2 d-block">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">Registered office:
+                At: Masnerwadi, Tq: Gangakhed, Dist: Parbhani- 431514.</span></li>
+              <li><a href="#"><span class="icon icon-phone"></span><span class="text">Contact no: 9920241110</span></a></li>
+              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">Email: sairuraldevelopmenttrust@gmail.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p>
+       Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://gtasterix.com" target="_blank">GTasterix IT
+              Services Pvt Ltd</a>
+      </p>
+    </div>
+  </div>
+</footer>
+       
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
